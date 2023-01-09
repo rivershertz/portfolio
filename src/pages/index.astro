@@ -1,5 +1,14 @@
 ---
 import Nav from "../components/nav.astro";
+import { Picture } from "@astrojs/image/components";
+const props = {
+  src: "/photo-1667816145008-1670efc5a462.avif",
+  alt: "",
+  widths: [400, 800, 1200],
+  aspectRatio: "1:1",
+  formats: ["avif"],
+  background: "#000",
+};
 ---
 
 <html lang="en">
@@ -23,5 +32,17 @@ import Nav from "../components/nav.astro";
   <body>
     <Nav />
     <h1>Astro</h1>
+    <div class="grid grid-cols-3">
+      <Picture {...props} />
+      <Picture {...props} />
+      <Picture {...props} />
+      <Picture {...props} />
+      <Picture {...props} />
+      <Picture {...props} />
+      <Picture {...props} />
+      <Picture {...props} />
+      <Picture {...props} />
+      <Picture {...props} />
+    </div>
   </body>
 </html>
