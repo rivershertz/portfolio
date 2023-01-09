@@ -1,14 +1,6 @@
 ---
 import Nav from "../components/nav.astro";
 import { Picture } from "@astrojs/image/components";
-const props = {
-  src: "/photo-1667816145008-1670efc5a462.avif",
-  alt: "",
-  widths: [400, 800, 1200],
-  aspectRatio: "1:1",
-  formats: ["avif"],
-  background: "#000",
-};
 ---
 
 <html lang="en">
@@ -33,16 +25,51 @@ const props = {
     <Nav />
     <h1>Astro</h1>
     <div class="grid grid-cols-3">
-      <Picture {...props} />
-      <Picture {...props} />
-      <Picture {...props} />
-      <Picture {...props} />
-      <Picture {...props} />
-      <Picture {...props} />
-      <Picture {...props} />
-      <Picture {...props} />
-      <Picture {...props} />
-      <Picture {...props} />
+      <Picture
+        src="photo-1667816145008-1670efc5a462.avif"
+        alt=""
+        widths={[400, 800, 1200]}
+        aspectRatio="1=1"
+        formats={["avif"]}
+        background="#000"
+        aspectRatio={1}
+      />
+      <Picture
+        src="photo-1673205194019-55ac9f0a0899.avif"
+        alt=""
+        widths={[400, 800, 1200]}
+        aspectRatio="1=1"
+        formats={["avif"]}
+        background="#000"
+        aspectRatio={1}
+      />
+      <Picture
+        src="photo-1673212815564-224a4beb5c1f.avif"
+        alt=""
+        widths={[400, 800, 1200]}
+        aspectRatio="1=1"
+        formats={["avif"]}
+        background="#000"
+        aspectRatio={1}
+      />
+      <Picture
+        src="photo-1673232141234-889ed2cf341c.avif"
+        alt=""
+        widths={[400, 800, 1200]}
+        aspectRatio="1=1"
+        formats={["avif"]}
+        background="#000"
+        aspectRatio={1}
+      />
+      <Picture
+        src="photo-1673212815753-47e88355225e.avif"
+        alt=""
+        widths={[400, 800, 1200]}
+        aspectRatio="1=1"
+        formats={["avif"]}
+        background="#000"
+        aspectRatio={1}
+      />
     </div>
   </body>
 </html>
